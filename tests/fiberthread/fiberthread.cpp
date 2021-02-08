@@ -7,7 +7,7 @@
 FiberThread::FiberThread()
 {
 	// Give your own name here!
-	SetName(std::string("FiberThread").c_str());
+	SetName((char*)"FiberThread");
 }
 
 // Some helper functions

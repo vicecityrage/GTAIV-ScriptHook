@@ -49,7 +49,7 @@ private:
 
 public:
     GenericLogger() { m_pNextLogger = 0; }
-    virtual ~GenericLogger() {}
+    virtual ~GenericLogger() = default;
 
     virtual void Debug(const ch *message) { Log("DEBUG", message); }
     virtual void Info(const ch *message) { Log("INFO", message); }
